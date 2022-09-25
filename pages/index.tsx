@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export const Home = (): JSX.Element => (
+export const Home = () => (
   <div className="container">
     <Head>
       <title>Create Next App</title>
@@ -15,14 +15,6 @@ export const Home = (): JSX.Element => (
       <p className="description">
         Get started by editing <code>pages/index.tsx</code>
       </p>
-
-      <button
-        onClick={() => {
-          window.alert('With typescript and Jest');
-        }}
-      >
-        Test Button
-      </button>
 
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
