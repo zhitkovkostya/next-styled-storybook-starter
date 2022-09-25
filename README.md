@@ -13,7 +13,6 @@ Bootstrap a developer-friendly NextJS app configured with:
 - [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/) for easy commits that follow conventional standard.
 - [**Semantic Release**](https://github.com/semantic-release/semantic-release) for automated app versioning
 
-
 ## Deploy your own
 
 Deploy the example using [Vercel](https://vercel.com):
@@ -23,12 +22,12 @@ Deploy the example using [Vercel](https://vercel.com):
 ## How to use
 
 1. Clone project: `git clone git@github.com:whoisryosuke/next-styled-storybook-starter.git`
-2. Install dependencies: `yarn`
+2. Install dependencies: `npm ci`
 
 Now you have 2 main options:
 
-- Run Storybook: `yarn storybook`
-- Run the NextJS app: `yarn dev`
+- Run Storybook: `npm run storybook`
+- Run the NextJS app: `npm run dev`
 
 # Storybook
 
@@ -61,7 +60,7 @@ With `MDX` we can define a story for `Checkbox` right in the middle of our Markd
 
 ## With Jest
 
-`yarn test`
+`npm run test`
 
 This project is setup with **Jest**, Jest **Snapshots**, and **react-testing-library**. This means you can **snapshot test** (save codified representation of components for comparison) and **unit test** component functionality (like clicking a button and verifying a result).
 
@@ -69,7 +68,7 @@ Test utilities are provided for convenience (see: `test/testUtils.ts`), like a c
 
 ## With Typescript
 
-`yarn type-check`
+`npm run type-check`
 
 Runs the Typescript CLI for type checking. This also runs as a `pre-push` git hook to ensure code quality before pushing to remote servers.
 
@@ -78,21 +77,21 @@ Runs the Typescript CLI for type checking. This also runs as a `pre-push` git ho
 Git commits are "linted" (or checked) to ensure they follow conventional commit standards. To make this process easier, a commit script is included:
 
 1. Stage some files using `git add` (or VSCode UI)
-1. `yarn commit`
+1. `npm run commit`
 
-This runs the Commitzen CLI and walks you through writing a conventional commit (e.g. `feat(button): new focus ref`). It's much easier than remembering every type of commit (feat, build, bug, etc) and the right syntax. 
+This runs the Commitzen CLI and walks you through writing a conventional commit (e.g. `feat(button): new focus ref`). It's much easier than remembering every type of commit (feat, build, bug, etc) and the right syntax.
 
 # CI / CD
 
 This project is setup with a **Circle CI** configuration for testing commits to any branch, and releasing only commits to `master` and `beta` branches.
 
-*Sample release flow:*
+_Sample release flow:_
 
 - Clone your repo (a fork of this one most likely)
 - Create a new feature/bug/etc branch
 - Make commits and push them to Github
 - **This triggers a test in CI**
 - Open a PR and merge the branch to `beta` branch for testing
-- **This triggers a test *and* release in CI**
+- **This triggers a test _and_ release in CI**
 - Force push branch changes to master
-- **This triggers a test *and* release in CI**
+- **This triggers a test _and_ release in CI**

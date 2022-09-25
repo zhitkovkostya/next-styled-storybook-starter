@@ -5,16 +5,16 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout
-      - run: yarn install --frozen-lockfile
-      - run: yarn run lint
-      - run: yarn run test
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
 
   release:
     docker:
       - image: circleci/node:10
     steps:
       - checkout
-      - run: yarn install --frozen-lockfile
+      - run: npm ci
       # Run optional required steps before releasing
       # - run: npm run build-script
       - run: npx semantic-release
