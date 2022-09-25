@@ -1,5 +1,5 @@
-import { ThemeProvider } from 'styled-components'
-import theme from '../themes/light'
+import { ThemeProvider } from 'styled-components';
+import theme from '../themes/light';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -8,5 +8,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

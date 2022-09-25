@@ -487,5 +487,5 @@ export const theme = {
       '1000': '#520339',
     },
   },
-}
-export default theme
+};
+export default theme;

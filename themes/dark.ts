@@ -1,4 +1,4 @@
-import lightTheme from './light'
+import lightTheme from './light';
 
 export const theme = {
   ...lightTheme,
@@ -12,6 +12,6 @@ export const theme = {
       hover: '#ededed',
     },
   },
-}
+};
 
-export default theme
+export default theme;

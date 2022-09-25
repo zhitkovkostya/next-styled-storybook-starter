@@ -36,8 +36,8 @@ Now you have 2 main options:
 ## MDX Template
 
 ```mdx
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
-import { Checkbox } from './Checkbox'
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Checkbox } from './Checkbox';
 
 <Meta title="MDX/Checkbox" component={Checkbox} />
 
